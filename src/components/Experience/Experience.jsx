@@ -49,9 +49,7 @@ export const Experience = () => {
           {skills.map((skill, id) => (
             <div key={id} className={styles.skill}>
               <div className={styles.skillImageContainer}>
-                {skillIcons[skill.title] || (
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                )}
+                {skillIcons[skill.title]}
               </div>
               <p>{skill.title}</p>
             </div>
@@ -61,10 +59,10 @@ export const Experience = () => {
         <ul className={styles.history}>
           {history.map((historyItem, id) => (
             <li key={id} className={styles.historyItem}>
-              <img
+              {/* <img
                 src={getImageUrl(historyItem.imageSrc)}
                 alt={`${historyItem.organisation} Logo`}
-              />
+              /> */}
               <div className={styles.historyItemDetails}>
                 <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
                 <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
