@@ -1,0 +1,147 @@
+@import "../../vars.css";
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  scroll-behavior: auto;
+}
+.modal {
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  width: 100%;
+  max-width: 80vw;
+  max-height: 90vh;
+  overflow-y: auto;    /* vertical scroll */
+  overflow-x: hidden;  /* hide horizontal scroll */
+  padding: 50px;
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.markdown {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #24292e;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(27 31 35 / 0.12);
+  overflow-wrap: break-word;
+}
+
+/* Headings */
+.markdown h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.67em 0;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+.markdown h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0 0.5em 0;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+.markdown h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 1em 0 0.5em 0;
+}
+
+/* Paragraphs */
+.markdown p {
+  margin: 0.8em 0;
+  color: #57606a;
+}
+
+/* Lists */
+.markdown ul, .markdown ol {
+  padding-left: 2em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.markdown li {
+  margin-bottom: 0.3em;
+}
+
+/* Links */
+.markdown a {
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+.markdown pre {
+  background-color: #f6f8fa;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-size: 0.85em;
+  line-height: 1.45;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  margin: 1em 0;
+  border: 1px solid #d1d5da;
+}
+
+.markdown code {
+  background-color: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 85%;
+}
+
+/* Blockquotes */
+.markdown blockquote {
+  margin: 0.8em 0;
+  padding-left: 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  background-color: #f6f8fa;
+  border-radius: 4px;
+}
+
+/* Tables */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.markdown th, .markdown td {
+  border: 1px solid #d1d5da;
+  padding: 6px 13px;
+}
+
+.markdown th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+  text-align: left;
+}
