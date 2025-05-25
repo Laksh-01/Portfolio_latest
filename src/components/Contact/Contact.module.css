@@ -26,7 +26,7 @@
 
 .links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   list-style: none;
   gap: 26px;

@@ -14,15 +14,15 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <a href="mailto:lakshsachdeva01@gmail.com"><FaEnvelope className={styles.icon}></FaEnvelope>    lakshsachdeva01@gmail.com</a>
+          <a href="mailto:lakshsachdeva01@gmail.com"><FaEnvelope className={styles.icon}></FaEnvelope> </a>
         </li>
         <li className={styles.link}>
-          <FaLinkedin className={styles.icon}></FaLinkedin>
-          <a href="https://www.linkedin.com/in/lakshsachdeva/">linkedin.com/lakshsachdeva</a>
+          
+          <a href="https://www.linkedin.com/in/lakshsachdeva/"><FaLinkedin className={styles.icon}></FaLinkedin></a>
         </li>
         <li className={styles.link}>
-         <FaGithub className={styles.icon}></FaGithub>
-          <a href="https://github.com/Laksh-01">github.com/Laksh-01</a>
+         
+          <a href="https://github.com/Laksh-01"><FaGithub className={styles.icon}></FaGithub></a>
         </li>
       </ul>
     </footer>
