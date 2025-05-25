@@ -4,6 +4,8 @@ import styles from "./Navbar.module.css";
 
 import {getImageUrl} from '../../utils';
 
+import { FiMenu, FiX } from 'react-icons/fi';
+
 
 
 
@@ -18,15 +20,9 @@ export const Navbar = () => {
       <a href = "/"  className={styles.title}> Portfolio </a>
 
       <div className={styles.menu}>
-          <img 
-              className={styles.menuBtn}  
-              src={menuOpen ? 
-                  getImageUrl("nav/closeIcon.png") : 
-                  getImageUrl("nav/menuIcon.png")}
-
-              alt="menu-button" 
-              onClick={()=>setMenuOpen(!menuOpen)}
-          > </img>
+          <div className={styles.menuBtn} onClick={() => setMenuOpen(!menuOpen)}>
+  {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+</div>
       </div>
 
 

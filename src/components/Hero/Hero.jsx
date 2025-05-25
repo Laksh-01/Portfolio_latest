@@ -15,10 +15,10 @@ export const Hero = () => {
     </div>
 
 
-    <img src = '../../assets/Hero.png'
+    {/* <img src = '../../assets/Hero.png'
       alt= "hero"
       className={styles.heroImg}
-      ></img>
+      ></img> */}
     <div className={styles.topBlur}/>
     <div className={styles.bottomBlur}/>
    </section>

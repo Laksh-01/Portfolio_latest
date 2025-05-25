@@ -33,6 +33,11 @@
   list-style: none;
 }
 
+.menuBtn {
+  cursor: pointer;
+  /* Add margin/padding as needed */
+}
+
 .menuItems a {
   font-size: 25px;
   color: var(--color-text);
