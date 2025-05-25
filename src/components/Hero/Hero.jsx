@@ -1,6 +1,10 @@
 import React from 'react'
 import { getImageUrl } from '../../utils'
 import styles from "./Hero.module.css";
+import heroImg from '../../../assets/Hero.png';
+
+
+
 
 export const Hero = () => {
   return (
@@ -15,10 +19,7 @@ export const Hero = () => {
     </div>
 
 
-    {/* <img src = '../../assets/Hero.png'
-      alt= "hero"
-      className={styles.heroImg}
-      ></img> */}
+    <img src={heroImg} alt="hero" className={styles.heroImg} />
     <div className={styles.topBlur}/>
     <div className={styles.bottomBlur}/>
    </section>
