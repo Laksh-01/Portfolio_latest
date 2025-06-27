@@ -3,8 +3,8 @@
       "role": "Software Engineer - Internship",
       "organisation": "L&T Hydrocarbon ",
       "startDate": "May, 2025",
-      "endDate": "Present",
-      "experiences": ["Worked on", "Reduced load times by 50%"],
+      "endDate": "July, 2025",
+      "experiences": ["Contributed to the development of a major internal product focused on Dynamic Manual Creation, aimed at streamlining and automating the process of generating technical manuals.", "Developed the application using C# and ASP.NET following the Onion Architecture to ensure a clean separation of concerns, improved testability, and maintainability.","Worked with technologies such as Entity Framework, SQL Server, and REST APIs for robust back-end development."],
       "imageSrc": "history/google.png"
     }
     

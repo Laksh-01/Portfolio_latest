@@ -1,5 +1,6 @@
-import React from 'react'
-import styles from '../Resume/Resume.module.css'
+import React from 'react';
+import { FaFileDownload, FaArrowRight } from 'react-icons/fa';
+import styles from './Resume.module.css';
 
 export const Resume = () => {
   const handleDownload = () => {
@@ -10,15 +11,20 @@ export const Resume = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '2rem' } } id="resume">
-      {/* <h2>My Resume</h2> */}
+    <div className={styles.container} id="resume">
       <button
         onClick={handleDownload}
-        className={styles.btn}
+        className={styles.downloadBtn}
+        aria-label="Download Resume"
       >
-        Download Resume
+        <span className={styles.btnContent}>
+          <FaFileDownload className={styles.downloadIcon} />
+          <span>Download Resume</span>
+          <FaArrowRight className={styles.arrowIcon} />
+        </span>
+        <span className={styles.btnBg}></span>
       </button>
     </div>
   );
-}
+};
 

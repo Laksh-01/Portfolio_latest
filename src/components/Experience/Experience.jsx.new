@@ -4,9 +4,8 @@ import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
-import { MdDevices, MdWork, MdSchool } from "react-icons/md";
 
-// React Icons
+// React Icons from Font Awesome
 import {
   FaHtml5,
   FaCss3Alt,
@@ -28,27 +27,41 @@ import {
   FaCloud,
   FaMicrochip
 } from "react-icons/fa";
-import { SiGraphql, SiMongodb, SiDotnet, SiR, SiCplusplus } from "react-icons/si";
-// import { SiMicrosoft } from "react-icons/bs";
-import { AiOutlineBarChart } from "react-icons/ai";
 
+// Simple skill icons mapping using only Font Awesome for better compatibility
 const skillIcons = {
+  // Web Development
   HTML: <FaHtml5 color="#e34c26" size={28} />,
   CSS: <FaCss3Alt color="#264de4" size={28} />,
+  JS: <FaCode color="#f7df1e" size={28} />,
   React: <FaReact color="#61dafb" size={28} />,
   Node: <FaNodeJs color="#3c873a" size={28} />,
-  GraphQL: <SiGraphql color="#e535ab" size={28} />,
-  MongoDB: <SiMongodb color="#4db33d" size={28} />,
-  Figma: <FaFigma color="#a259ff" size={28} />,
-  Dotnet: <SiDotnet color="#68217a" size={28} />,
-  Python: <FaPython color="#3776ab" size={28} />,
+  
+  // Databases
+  MongoDB: <FaDatabase color="#4db33d" size={28} />,
   SQL: <FaDatabase color="#f29111" size={28} />,
+  
+  // Design & Tools
+  Figma: <FaFigma color="#a259ff" size={28} />,
+  
+  // Programming Languages
+  Python: <FaPython color="#3776ab" size={28} />,
+  'C#': <FaCode color="#9B4F96" size={28} />,
+  
+  // Data & IoT
   CSV: <FaFileAlt color="#4caf50" size={28} />,
-  Arduino: <MdDevices color="#00979D" size={28} />,
-  PowerBI: <AiOutlineBarChart color="#F2C811" size={28} />,
-  R: <SiR color="#276DC3" size={28} />,
-  'C#': <SiCplusplus color="#9B4F96" size={28} />,
-  // Azure: <SiMicrosoft color="#0089D6" size={28} />,
+  Arduino: <FaMicrochip color="#00979D" size={28} />,
+  PowerBI: <FaChartLine color="#F2C811" size={28} />,
+  R: <FaChartLine color="#276DC3" size={28} />,
+  
+  // Cloud & APIs
+  Azure: <FaMicrosoft color="#0089D6" size={28} />,
+  WebSocket: <FaProjectDiagram color="#4CAF50" size={28} />,
+  MQTT: <FaServer color="#660066" size={28} />,
+  GraphQL: <FaProjectDiagram color="#e535ab" size={28} />,
+  
+  // Fallback
+  Dotnet: <FaCode color="#68217a" size={28} />,
 };
 
 const fadeInUp = {

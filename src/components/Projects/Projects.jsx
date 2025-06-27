@@ -1,35 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectModal } from "./ProjectModal";
 import projectsData from "../../data/projects.json";
-import projectReadmes from '../../data/extension_project1.json';  // or an object with multiple readmes
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
 
 export const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  // Find the readme JSON data corresponding to the selected project
-  const selectedReadme = selectedProject ? projectReadmes[selectedProject.id] : null;
-
   return (
     <section className={styles.container} id="projects">
-      <h2 className={styles.title}>Projects</h2>
-      <div className={styles.projects}>
-        {projectsData.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            onReadMore={() => setSelectedProject(project)}
-          />
-        ))}
-      </div>
+      <div className={styles.wrapper}>
+        <motion.div
+          className={styles.header}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+        >
+          <h2 className={styles.title}>My Projects</h2>
+          <p className={styles.subtitle}>
+            Here are some of my recent projects. Each one was built to solve a specific problem
+            and demonstrates my skills in different areas of development.
+          </p>
+        </motion.div>
 
-      {selectedProject && (
-        <ProjectModal
-          project={{ ...selectedProject, readmeSections: selectedReadme }}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+        <div className={styles.projects}>
+          {projectsData.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
