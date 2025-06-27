@@ -5,8 +5,8 @@ import styles from './Resume.module.css';
 export const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assets/resume.pdf';
-    link.download = 'resume.pdf';
+    link.href = '/assets/LAKSH_SACHDEVA_2025.pdf';
+    link.download = 'LAKSH_SACHDEVA_2025.pdf';
     link.click();
   };
 

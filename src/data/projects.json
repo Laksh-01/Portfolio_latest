@@ -4,7 +4,7 @@
     "description": "A full-stack finance tracking web app that allows users to manage income, expenses, and investments with real-time charts, AI insights, and future prediction capabilities.",
     "skills": ["React", "Prisma", "PostgreSQL", "Clerk", "ShadCN UI", "AI", "Chart.js"],
     "demo": "https://fintracker-gamma.vercel.app/",
-    "source": "https://github.com/Laksh-01/FinTracker",
+    "source": "https://github.com/Laksh-01/FinTrack",
     "readme": "FinTracker is an AI-powered personal finance web application where users can create accounts, add transactions, track investments, and visualize financial data using interactive pie charts. AI features include scanning and classifying transactions, giving investment suggestions, and predicting future values using compound logic. The app features secure Clerk authentication, paginated transaction history, a dark/light theme UI, and an investment-support chatbot. Future plans include multi-currency support, goal tracking, and budgeting tips."
   }
   ,
